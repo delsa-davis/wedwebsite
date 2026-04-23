@@ -58,16 +58,12 @@
     position: relative;
     background: var(--cream);
     overflow: hidden;
-     background: linear-gradient(
-     rgba(255,253,248,0.65),
-     rgba(255,253,248,0.65)
-    ),
-    url('images/bg.jpeg');
+    background:url('images/bg.jpeg');
 
   background-size: cover;
   background-position: center;
 }
-  }
+  
 
   .hero-bg-ornament {
     position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
@@ -85,7 +81,7 @@
 
   .hero-tag {
     font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
-    color: var(--gold-dark); margin-bottom: 2rem;
+    color: var(--gold); margin-bottom: 2rem;
     animation: fadeUp 1s ease both;
   }
 
@@ -100,7 +96,7 @@
     font-family: var(--serif);
     font-size: clamp(72px, 14vw, 130px);
     font-weight: 300; line-height: 0.92;
-    color: var(--charcoal);
+    color: #ffffff;
     animation: fadeUp 1s 0.2s ease both;
   }
   .hero-names em { display: block; font-style: italic; }
@@ -108,7 +104,7 @@
   .hero-amp {
     font-family: var(--serif); font-style: italic;
     font-size: clamp(36px, 6vw, 56px);
-    color: var(--gold-dark);
+    color: var(--gold);
     display: block; margin: 0.3rem 0;
     animation: fadeUp 1s 0.3s ease both;
   }
@@ -118,18 +114,21 @@
     margin: 2rem auto; width: min(380px, 80vw);
     animation: fadeUp 1s 0.4s ease both;
   }
-  .hero-rule-line { flex: 1; height: 0.5px; background: var(--gold-light); }
+  .hero-rule-line { flex: 1; height: 0.5px; background: var(--gold); }
   .hero-rule-diamond {
     width: 7px; height: 7px;
-    background: var(--gold-dark);
+    background: var(--gold);
     transform: rotate(45deg);
     flex-shrink: 0;
   }
 
   .hero-date {
     font-size: 14px; letter-spacing: 3.5px; text-transform: uppercase;
-    color: var(--brown); line-height: 2;
+    color: rgba(43, 18, 2, 0.7);
+    line-height: 2;
     animation: fadeUp 1s 0.5s ease both;
+    background-color: rgb(256,256,256,0.5);
+    padding: 10px;
   }
 
   .hero-scroll {
@@ -386,12 +385,12 @@
   </div>
   <div class="hero-date">
     Thursday &nbsp;·&nbsp; 7th May 2026 &nbsp;·&nbsp; 10:30 AM<br>
-    <span style="font: size 11px;px;letter-spacing:2px;color:rgba(43, 18, 2, 0.7);">Angamaly, Kerala</span>
+    <span style="font: size 11px;letter-spacing:2px;color:rgba(43, 18, 2, 0.7);">Angamaly, Kerala</span>
   </div>
-  <div class="hero-scroll">
+  <!-- <div class="hero-scroll">
     <div class="scroll-line"></div>
     <span>Scroll</span>
-  </div>
+  </div> -->
 </section>
 
 <!-- EVENTS -->
@@ -419,7 +418,7 @@
           </div>
           <div>
             <div class="event-detail-label">Time</div>
-            <div class="event-detail-value">10:30 AM</div>
+            <div class="event-detail-value">11:00 AM</div>
           </div>
         </div>
         <div class="event-detail-row">
@@ -460,7 +459,7 @@
           </div>
           <div>
             <div class="event-detail-label">Venue</div>
-            <div class="event-detail-value">Bharatha Rani Church<br>Parish Hall, Vathakkad</div>
+            <div class="event-detail-value">St.Joseph Church<br>Parish Hall, Kokkunnu</div>
           </div>
         </div>
       </div>
@@ -491,9 +490,9 @@
       <div class="location-card reveal" style="transition-delay:0.15s;">
         <div class="location-number">02</div>
         <div class="location-type">Parish Hall · Reception</div>
-        <div class="location-name">Bharatha Rani Church<br>Parish Hall</div>
-        <div class="location-address">Vathakkad, Kerala<br>India</div>
-        <a class="directions-btn" href="https://www.google.com/maps/search/?api=1&query=Bharatha+Rani+Church+Parish+Hall+Vathakkad+Kerala" target="_blank" rel="noopener">
+        <div class="location-name">St.Joseph Church<br>Parish Hall</div>
+        <div class="location-address">Kokkunnu, Kerala<br>India</div>
+        <a class="directions-btn" href="https://www.google.com/maps/search/?api=1&query=St+Joseph+Church+Kokkunnu+Parish+Hall+Angamaly+Kerala" target="_blank" rel="noopener">
           Get directions
           <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
